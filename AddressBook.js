@@ -133,3 +133,9 @@ try{
 }catch(e){
     console.log(e);
 }
+
+let person1 = new AddressBook("Shruti", "Kangna", "Werfxch", "Rrtytdfgy", "Bihar", "565754", "66 4567532346","erwq45@gmail.com" );
+let addressBookArray = [];
+addressBookArray[0] = person1;
+addressBookArray[1] = person;
+console.log(addressBookArray);
