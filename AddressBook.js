@@ -139,3 +139,8 @@ let addressBookArray = [];
 addressBookArray[0] = person1;
 addressBookArray[1] = person;
 console.log(addressBookArray);
+
+let objIndex = addressBookArray.findIndex((obj => obj.firstName == "Smruti"));
+console.log("Before Update : " + addressBookArray[objIndex]);
+addressBookArray[objIndex].city = "Basudevpur";
+console.log("After Update : " + addressBookArray[objIndex]);
