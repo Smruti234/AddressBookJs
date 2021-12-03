@@ -144,3 +144,11 @@ let objIndex = addressBookArray.findIndex((obj => obj.firstName == "Smruti"));
 console.log("Before Update : " + addressBookArray[objIndex]);
 addressBookArray[objIndex].city = "Basudevpur";
 console.log("After Update : " + addressBookArray[objIndex]);
+
+let person3 = new AddressBook(" Satya", "Kalia", "Kfgh", "Bihar", "Mumbai", "456789", "65 7896543452", "neha43@gmail.com" );
+addressBookArray[2] = person3;
+console.log(addressBookArray);
+let index = addressBookArray.findIndex((obj => obj.firstName == "Satya"));
+addressBookArray.splice(index, 1);
+console.log("After Deletion");
+console.log(addressBookArray);
