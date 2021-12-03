@@ -152,3 +152,6 @@ let index = addressBookArray.findIndex((obj => obj.firstName == "Satya"));
 addressBookArray.splice(index, 1);
 console.log("After Deletion");
 console.log(addressBookArray);
+
+let count = addressBookArray.reduce((counter, person) => counter + 1, 0);
+console.log(count);
