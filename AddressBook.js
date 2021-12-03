@@ -176,3 +176,7 @@ console.log(contacts);
 let personFromState = addressBookArray.filter(person => person.state == "Odisha");
 console.log("Contacts from State 'Odisha' are : ");
 console.log(personFromState);
+
+console.log("No.of Persons from city = 'Bbbbb' and state = 'Odisha' : ");
+let countByCity = addressBookArray.filter(person => person.city =="Bbbbb" && person.state == "Odisha").reduce((count, person) => count + 1, 0);
+console.log(countByCity);
