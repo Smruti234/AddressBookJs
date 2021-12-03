@@ -155,3 +155,12 @@ console.log(addressBookArray);
 
 let count = addressBookArray.reduce((counter, person) => counter + 1, 0);
 console.log(count);
+
+let person4 = new AddressBook("Bhasta", "Srt", "Gtfvs", "Gtdhuj", "Ngtdbd","57875", "91 4546786789", "chinku23@gmail.com");
+if(addressBookArray.findIndex(contact => contact.firstName == person4.firstName) == -1){
+    addressBookArray[3] = person4;
+}
+else{
+    console.log("Duplicate Entry");
+}
+console.log(addressBookArray);
